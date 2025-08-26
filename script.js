@@ -16,8 +16,8 @@ const unitToggle = document.getElementById("unitToggle");
 const themeToggle = document.getElementById("themeToggle");
 
 // Profile
-document.getElementById("profileLink").textContent = Riya Aggarwal;
-document.getElementById("profileLink").href = https://www.linkedin.com/in/riya-aggarwal-28429b260;
+document.getElementById("profileLink").textContent = PROFILE_NAME;
+document.getElementById("profileLink").href = PROFILE_LINK;
 
 // State
 let isCelsius = true;
