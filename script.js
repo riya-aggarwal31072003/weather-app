@@ -1,8 +1,8 @@
 // ========== Config ==========
 // ===== Replace with your WeatherAPI key =====
 const API_KEY = "7cbf61a6d6484deabd755744252608"; 
-const PROFILE_NAME = "Your Name";
-const PROFILE_LINK = "https://www.linkedin.com/in/your-profile";
+const PROFILE_NAME = "Riya Aggarwal";
+const PROFILE_LINK = "https://www.linkedin.com/in/riya-aggarwal-28429b260";
 // ===========================================
 
 const form = document.getElementById("searchForm");
