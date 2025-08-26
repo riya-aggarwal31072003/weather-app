@@ -29,5 +29,5 @@ A modern, fully responsive **Weather App** built with **HTML, CSS, and JavaScrip
 ## 🔑 Setup
 1. Clone the repo  
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/riya-aggarwal31072003/weather-app.git
    cd weather-app
