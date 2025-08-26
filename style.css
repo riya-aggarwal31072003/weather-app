@@ -1,0 +1,96 @@
+:root {
+  --bg-light: linear-gradient(135deg,#0ea5ea 0%,#2af598 100%);
+  --bg-dark: linear-gradient(135deg,#232526 0%,#414345 100%);
+  --surface: rgba(255,255,255,0.12);
+  --surface-strong: rgba(255,255,255,0.2);
+  --text-light: #ffffff;
+  --text-dark: #0b1220;
+  --shadow: 0 12px 30px rgba(0,0,0,.2);
+  --radius: 18px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark mode */
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.15);
+  border-bottom: 1px solid var(--surface-strong);
+}
+
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo { font-size: 1.5rem; }
+.search { flex: 1; display: flex; gap: 10px; }
+.input {
+  flex: 1; padding: 10px 14px; border-radius: 12px;
+  border: none; outline: none; font-size: 1rem;
+}
+.btn {
+  padding: 10px 14px; border: none; border-radius: 10px;
+  cursor: pointer; font-weight: 600; background: #fff; color: #000;
+}
+.btn.small { font-size: 0.9rem; padding: 8px 10px; }
+.actions { display: flex; gap: 8px; }
+
+.main {
+  flex: 1;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.weather-head { display: flex; justify-content: space-between; align-items: center; }
+.temp { font-size: 2.8rem; font-weight: bold; }
+.unit { font-size: 1.2rem; margin-left: 4px; }
+
+.grid {
+  display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 12px;
+}
+.kv { background: rgba(255,255,255,0.15); border-radius: 12px; padding: 10px; display: flex; justify-content: space-between; }
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.forecast-item {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.footer {
+  text-align: center;
+  padding: 12px;
+  background: rgba(0,0,0,0.15);
+}
+.footer a { color: #fff; font-weight: bold; text-decoration: none; }

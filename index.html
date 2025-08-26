@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WeatherNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">🌤️</span>
+      <h1>WeatherNow</h1>
+    </div>
+
+    <form id="searchForm" class="search" autocomplete="off" aria-label="Search city">
+      <input id="cityInput" class="input" type="text" placeholder="Search city" />
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    <div class="actions">
+      <button id="geoBtn" class="btn small">📍</button>
+      <button id="unitToggle" class="btn small">°F</button>
+      <button id="themeToggle" class="btn small">🌓</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="card" id="status"></section>
+
+    <section class="card weather" id="weatherCard" hidden>
+      <div class="weather-head">
+        <div>
+          <h2 id="location"></h2>
+          <p id="date"></p>
+        </div>
+        <img id="icon" alt="Weather icon" />
+      </div>
+
+      <div class="weather-body">
+        <div class="temp">
+          <span id="temp"></span><span class="unit">°C</span>
+        </div>
+        <p id="desc" class="muted"></p>
+        <div class="grid">
+          <div class="kv"><span class="k">Feels like</span><span class="v" id="feels"></span></div>
+          <div class="kv"><span class="k">Humidity</span><span class="v" id="humidity"></span></div>
+          <div class="kv"><span class="k">Wind</span><span class="v" id="wind"></span></div>
+          <div class="kv"><span class="k">Pressure</span><span class="v" id="pressure"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card forecast" id="forecastCard" hidden>
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built by <a id="profileLink" href="https://www.linkedin.com/in/riya-aggarwal-28429b260" target="_blank" rel="noopener">Riya Aggarwal</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
